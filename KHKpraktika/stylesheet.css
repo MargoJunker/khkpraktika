@@ -1,0 +1,431 @@
+@font-face {
+    font-family: Conten;
+    src:
+        url('myfont.woff2') format('woff2'),
+}
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    color: #000;
+    text-align: center;
+    font-family: 'Conten', sans-serif;
+}
+header { 
+    margin-bottom: 30px;
+}
+
+/* menu nad header */
+.nav {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.1em;
+}
+.nav .navbar-nav .navbar-right {
+    margin-left: 70px;
+}
+.navbar-right~.navbar-right {
+  margin-right: 10px;
+}
+.navbar-brand {
+    height: 70px;
+    width: auto;
+    padding: 0;
+    padding-right: 10px;
+}
+.navbar-header {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.navbar-form{
+    margin-top: 10px;
+    padding: 0 0 0 0;
+}
+.navbar-toggle {
+    position: absolute;
+    float: center;
+    margin-top: 15px;
+}
+.nav.navbar-nav {
+    margin-top: 10px;
+    padding-left: 0px;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin: 0;
+}
+.nav-tabs>li>a:hover {
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar>.container-fluid .navbar-brand {
+  margin-left: 0px;
+}
+/* containers & wrappers */
+.container {
+    max-width: 940px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    /*padding-top: 160px;*/
+    padding-top: 44px;
+    background: white;
+}
+.wrap {
+    max-width: 940px;
+    margin: 0 auto;
+}
+.col-md-2 {
+    padding: 0;
+}
+div .row {
+    margin: 0 0 0 0;
+    min-width: 100%;
+    width: auto;
+}
+.cont {
+    /* background: #F8F8F8; */
+    border-radius: 1em;
+    padding-bottom: 60px;
+    margin-top: 0px;
+    text-align: justify;
+}
+.cont h1 {
+    padding-bottom: 20px;
+    font-weight: 700;
+    margin-top: 0;
+    font-family: 'Questrial', sans-serif;
+}
+.cont span {
+    color: lightblack;
+}
+/* menu */
+.navbar {
+    background: white;
+    margin-bottom: 0;
+    min-height: 70px;
+}
+ul.nav-tabs {
+    border-bottom: none;
+    margin-top: 0px;
+}
+ul.nav-tabs li a {
+    color: gray;
+    text-align: left;
+}
+.navbar-nav>li>a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.navbar-nav>li>a:active {
+    background: none;
+    border-bottom: 3px solid red;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background: none;
+    border-bottom: 3px solid orange;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: darkred;
+  cursor: default;
+  background: none;
+  border: none;
+  border-bottom-color: transparent;
+}
+.nav-tabs>li>a {
+    border: none;
+}
+div.inb ul.nav>li>a {
+    padding: 5px 0px;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+    color: red;
+    font-weight: 700;
+    background: none;
+}
+ul.nav-tabs.affix {
+    top: 10px;
+    width: 273px;
+}
+
+.container .text-muted {
+    margin: 15px 35% 0 35%;
+    width: auto;
+    font-weight: 700;
+}
+
+.proov {
+    background: yellow;
+    min-height: 240px;
+}
+.proov2 {
+    background: orange;
+    min-height: 240px;
+}
+.esicontainer p{
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 15px 0;
+}
+.tutorial-subheader {
+    text-decoration: underline;
+}
+.well {
+    color: red;
+}
+/* social */
+.rssfeed {
+    padding-left: 0 !important;
+    padding-right: 15 !important;
+    text-decoration: none;
+    color: gray;
+}
+.rssfeed:active{
+    border: none !important;
+}
+.rssico {
+    width: 24px;
+    height: auto;
+}
+
+/* Avaleht 1 */
+.avakas {
+    background-image: url('21.png');
+    background-position: center;
+}
+.jumbotron {
+background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20minimalistic%20textures%20geometry%20digital%20art%20colors%20triangles_wallpaperswa.com_35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    max-height: 80px;
+    padding: 0;
+}
+.jumbotron h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 15px;
+    font-family: 'Questrial', sans-serif;
+}
+
+/* Button */
+.jumbotron span a{
+    margin: 12px 0;
+    font-family: 'Questrial', sans-serif;
+}
+.main-container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.adversment-box {
+    margin-top: 50px;
+}
+.preview {
+}
+.red {
+    color: darkred;
+    font-weight: 700;
+    font-family: 'Questrial', sans-serif;
+}
+.main-subbreaker {
+    max-height: 55px;
+}
+.main-subbreaker-text {
+    color: #686868;
+    font-size: 1.5em;
+    font-family: 'Questrial', sans-serif;
+}
+.main-content {
+    margin: 0 auto;
+}
+.main-a {
+    background: orange;
+}
+.main-tutorial {
+    background: red;
+    height: 360px;
+    width: auto;
+    border-bottom: 5px solid green;
+    border-top: 5px solid green;
+    margin: 5px 5px;
+}
+.tutorial-ad-box {
+    width: 468px;
+    height: 60px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.main-container {
+    background: white;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.main-container-content {
+    padding: 40px 0;
+}
+.main-subbreaker-text {
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0;
+}
+.main-table-item-box {
+    background: white;
+    padding: 15px 15px;
+    margin-top: 5px;
+    border-top: 5px solid orange;
+}
+.main-table-item-box:hover {
+    border-top: 5px solid red;
+}
+
+.main-table-itme-img {
+    margin: 0 auto;
+}
+.main-table-item-h3 a{
+    color: black;
+    font-family: 'Questrial', sans-serif;
+}
+.main-table-item-h3 a:hover{
+    color: gray;
+    text-decoration: none;
+    font-weight: 700;
+}
+.main-table-item-p {
+}
+.main-advert-header-box {
+    background: black;
+}
+.main-advert-header {
+    color: white;
+    font-weight: 600;
+    font-family: 'Questrial', sans-serif;
+}
+.main-advert-row {
+    padding: 0;
+}
+.main-advert-box {
+    height: 250px;
+    border: 1px solid black;
+}
+.main-advert-content img {
+    border: 1px solid black;
+}
+.main-advert-items {
+    padding: 0;
+    width: 300px;
+}
+.main-advert-popular {
+    border: 1px solid lightgray;
+    border-bottom: none;
+}
+.main-advert-popular-a {
+    color: black !important;
+    font-family: 'Questrial', sans-serif;
+}
+.main-advert-popular-a:hover {
+    text-decoration: none;
+}
+.main-advert-popular-more {
+    background: lightgray;
+}
+.main-footer {
+    background: white;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.main-footer-size {
+    height: 50px !important;
+    margin: 0 auto;
+}
+.main-footer-box p {
+    margin-top: 15px;
+    font-family: 'Questrial', sans-serif;
+}
+
+/* Tutorial list */
+.row-tutorial {
+    max-height: 150px
+}
+.tutorial-item-img img{
+    margin: 10px auto;
+    max-height: 120px;
+}
+.tutorial-item-row {
+    border-bottom: 1px solid lightgray;
+    border-right: 5px solid white;
+    max-height: 140px;
+}
+.tutorial-item-description h2 {
+    font-family: 'Questrial', sans-serif;
+}
+.tutorial-item-row:hover {
+    border-right: 5px solid orange;
+}
+.container-tutorial {
+    max-width: 940px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin:0 auto;
+    background: white;
+}
+.rssico-you {
+    margin: 0 10px;
+    width: 24px;
+    height: auto;
+}
+
+.navbar {
+    border-radius: 0;
+}
+/* search button */
+.hei {
+    text-indent: -99999px; 
+    width: 30px; 
+    height: 29px; 
+    top: 23px;
+    right: 183px;
+    background: white url(20.png) 6px 6px no-repeat;
+    border: none;
+}
+.hei:hover {
+    background: #F0F0F0 url(20.png) 5px 8px no-repeat;
+
+}
+.input-group-addon {
+    background: white;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.form-control {
+    border-right: none;
+}
+.input-group {
+    max-width: 180px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.about {
+    margin-right:20px;
+}
+.about2 {
+    margin-right: 0;
+}
+.keskmine {
+    font-size: 
