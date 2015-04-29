@@ -919,7 +919,28 @@ body {
 .site-content {
     background: url('21.png');
 }
-
+.row {
+    margin-left: -15px !important;
+}
+/*--------------------------------------------------------------
+## Main
+--------------------------------------------------------------*/
+.main-content {
+    margin: 0 auto;
+}
+.main-table-items {
+    margin: 0 auto;
+}
+.main-table-item-box {
+    background: white;
+    padding: 15px 15px;
+    margin-top: 5px;
+    border-top: 5px solid orange;
+    height: 250px;
+}
+.main-table-item-box:hover {
+    border-top: 5px solid red;
+}
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
