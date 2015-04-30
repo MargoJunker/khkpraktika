@@ -13,7 +13,7 @@
 
 get_header(); ?>
     
-    <div class="wrapper">
+
         <div class="jumbotron">
             <div class="row">
                 <div class="sisu col-sm-7"> 
@@ -26,8 +26,11 @@ get_header(); ?>
         </div>
         <div class="main-content">      
             <div class="row">
-                  <?php if (have_posts()) :
-                        while (have_posts()) : the_post(); ?>
+                  <?php 
+                        global $query_string;
+                        query_posts ('posts_per_page=12');
+                        if (have_posts()) : while (have_posts()) : the_post();
+                    ?>
                   <div class="main-table-items col-sm-6 col-md-4">
                       <div class="main-table-item-box">
                           <h3 class="main-table-item-h3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -38,6 +41,7 @@ get_header(); ?>
                         else :
                             echo '<p>No content found</p>';
                         endif; ?>
+            </div>
 	    <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

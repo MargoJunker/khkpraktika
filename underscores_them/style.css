@@ -917,16 +917,117 @@ body {
 ## Content
 --------------------------------------------------------------*/
 .site-content {
-    background: url('21.png');
+
 }
 .row {
-    margin-left: -15px !important;
+    max-width: 940px;
+    margin: 0 auto;
+}
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+header {
+    margin-bottom: 30px;
+}
+/* Navigation Menus */
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.site-header {
+    border: 1px solid lightgray;
+    border-top: none;
+    background: white;
+    height: 70px;
+}
+.navbar-brand {
+    height: 70px;
+    width: auto;
+    padding: 0;
+    padding: 0 10px;
+    margin-top: 0px !important;
+}
+.site-header a {
+    color: black;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+    color: black;
+    display: block;
+    padding: 10px 10px;
+    border-bottom: none;
+    text-decoration: none;
+}
+.site-header nav ul li a:hover {
+    padding-bottom: 5px;
+    border-bottom: 5px solid orange;
+    color: black;
+}
+/* Search */
+.search {
+    width: 200px;
+    margin-top: 14px;
+}
+.search-button {
+    height: 38px;
+    width: 42px;
+    border: none !important;
+    padding: 0 !important;
+}
+.input-group-addon {
+    padding: 0;
+    height: 40px !important;
+    background: white;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    background: url("http://www.upload.ee/image/4691478/loop.png") !important;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    box-shadow: none;
+}
+/*--------------------------------------------------------------
+## Jumbotron
+--------------------------------------------------------------*/
+.jumbotron {
+    margin: 0 auto;
+    padding: 0;
+    height: 70px;
+background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20minimalistic%20textures%20geometry%20digital%20art%20colors%20triangles_wallpaperswa.com_35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.learn-now {
+    margin-top: 12px;
+}
+.jumbotron h2 {
+    color: white;
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 15px;
+    font-family: 'Questrial', sans-serif;
+}
+/* Button */
+.jumbotron span a{
+    margin: 12px 0;
+    font-family: 'Questrial', sans-serif;
+}
+.jumbotron span a:visited {
+    color: white;
 }
 /*--------------------------------------------------------------
 ## Main
 --------------------------------------------------------------*/
 .main-content {
     margin: 0 auto;
+    background: white;
+    padding: 40px 0;
+    border: 1px solid lightgray;
+    border-top: none;
 }
 .main-table-items {
     margin: 0 auto;
@@ -941,6 +1042,16 @@ body {
 .main-table-item-box:hover {
     border-top: 5px solid red;
 }
+.main-table-item-h3 a{
+    color: black;
+    font-family: 'Questrial', sans-serif;
+}
+.main-table-item-h3 a:hover{
+    color: gray;
+    text-decoration: none;
+    font-weight: 700;
+}
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -955,3 +1066,6 @@ body {
 .site-footer p {
     margin-top: 15px;
 }
+
+
+    
