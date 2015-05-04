@@ -1051,7 +1051,33 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     text-decoration: none;
     font-weight: 700;
 }
-
+/*--------------------------------------------------------------
+## Single
+--------------------------------------------------------------*/
+.row {
+    background: white;
+}
+.tutorial-ad-box {
+    width: 468px;
+    height: 60px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.tutorial-content {
+    padding: 44px 15px;
+}
+.tutorial-header {
+    font-size: 4em;
+}
+.tutorial-subheader {
+    text-decoration: underline;
+}
+.inb {
+    padding-top: 44px;
+}
+.entry-content {
+    font-size: 1.5em;
+}
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -1066,6 +1092,62 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
 .site-footer p {
     margin-top: 15px;
 }
+/*------------------------------------------------------------------*/
+.tutorial-item-img img{
+    margin: 10px auto;
+    max-height: 120px;
+}
+.tutorial-item-row {
+    border-bottom: 1px solid lightgray;
+    border-right: 5px solid white;
+    max-height: 140px;
+}
+.tutorial-item-description h2 {
+    font-family: 'Questrial', sans-serif;
+}
+.tutorial-item-row:hover {
+    border-right: 5px solid orange;
+}
 
-
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: darkred;
+  cursor: default;
+  background: none;
+  border: none;
+  border-bottom-color: transparent;
+}
+div.inb ul.nav>li>a {
+    padding: 5px 0px;
+}
+div.inb ul.nav>li {
+    text-align: left;
+    font-size: 1.5em;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+    color: red;
+    font-weight: 700;
+    background: none;
+}
+ul.nav-tabs.affix {
+    top: 10px;
+    width: 273px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: darkred;
+  cursor: default;
+  background: none;
+  border: none;
+  border-bottom-color: transparent;
+}
+.nav-tabs>li>a:visited {
+    color: gray;
+}
+ul.nav-tabs {
+    border-bottom: none;
+    margin-top: 0px;
+}
+ul.nav-tabs li a {
+    color: gray;
+}
     
+

@@ -22,7 +22,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body data-spy="scroll" <?php body_class(); ?>>
 <!--<div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'underscores_theme' ); ?></a>
 
@@ -45,12 +45,9 @@
             <nav id="site-navigation" class="main-navigation" role="navigation">
             <a class="navbar-brand" href="http://178.62.65.175"><img class="navbar-brand" alt="Logo" src="http://www.upload.ee/image/4691422/01.png"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-            <form class="form-group navbar-left search" method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-                <div class="input-group">
-                  <input type="search" class="form-control" name="s" id="s" value="Search..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                <div class="input-group-addon"><input class="search-button" type="image" src="http://www.upload.ee/image/4691511/loop.png" id="searchsubmit" value="" class="btn" /></div>
+                <div class="header-widget">
+                    <?php if( dynamic_sidebar( 'header_widget' ) ) : else : endif; ?>
                 </div>
-            </form>
 		</nav><!-- #site-navigation -->
         </header>
         

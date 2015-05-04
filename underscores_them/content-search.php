@@ -20,6 +20,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
+	    <h1>HAAA</h1>
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 

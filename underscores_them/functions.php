@@ -94,9 +94,16 @@ function underscores_theme_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+    register_sidebar( array(
+        'name'          => 'Header Widget',
+        'id'            => 'header_widget',
+        'before_widget' => '<aside>',
+		'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+    ) );
 }
-add_action( 'widgets_init', 'underscores_theme_widgets_init' );
-
+add_action( 'widgets_init', 'underscores_theme_widgets_init', 'header_widget' );
 /**
  * Enqueue scripts and styles.
  */
@@ -148,5 +155,6 @@ function wpbootstrap_scripts_with_jquery()
 	wp_enqueue_script( 'custom-script' );
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
+
 
 ?>

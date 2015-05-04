@@ -15,13 +15,11 @@ get_header(); ?>
     
 
         <div class="jumbotron">
-            <div class="row">
                 <div class="sisu col-sm-7"> 
                     <h2 class="hidden-sm hidden-xs">Check out these popular tutorials</h2>
                 </div>
                 <div class="eelvaade col-sm-5 visible-lg-block visible-md-block">
                     <span><a class="btn btn-primary btn-lg learn-now" href="index.html" role="button">Browse All</a></span>
-                </div>
             </div>
         </div>
         <div class="main-content">      
@@ -34,7 +32,7 @@ get_header(); ?>
                   <div class="main-table-items col-sm-6 col-md-4">
                       <div class="main-table-item-box">
                           <h3 class="main-table-item-h3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                          <?php the_content(); ?>
+                          <p><?php the_excerpt();?></p>
                       </div>
                   </div>
                   <?php endwhile;
@@ -69,7 +67,7 @@ get_header(); ?>
        
 		  </main><!-- #main -->
 	   </div><!-- #primary -->
-    </div><!-- #wrapper --> 
+
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
