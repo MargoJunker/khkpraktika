@@ -15,6 +15,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap-affix.js"></script>
 
@@ -41,12 +42,15 @@
 
     <div class="wrapper">
         <!-- Site-header -->
-        <header class="site-header hidden-xs">
+        <header class="site-header">
             <nav id="site-navigation" class="main-navigation" role="navigation">
             <a class="navbar-brand" href="http://178.62.65.175"><img class="navbar-brand" alt="Logo" src="http://www.upload.ee/image/4691422/01.png"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-                <div class="header-widget">
+                <div class="navbar-left header-widget hidden-xs">
                     <?php if( dynamic_sidebar( 'header_widget' ) ) : else : endif; ?>
+                </div>
+                <div class="navbar-left rss-widget hidden-xs hidden-sm">
+                    <?php if( dynamic_sidebar( 'rss_widget' ) ) : else : endif; ?>
                 </div>
 		</nav><!-- #site-navigation -->
         </header>

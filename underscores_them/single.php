@@ -6,21 +6,15 @@
  */
 
 get_header(); ?>
-
 	<!--<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">-->  
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
                         <div class="inb" id="myScrollspy">
-                            <ul class="nav nav-tabs nav-stacked affix visible-lg-block visible-md-block" data-spy="affix" data-offset-top="90">
-                                <li><a href="#section-1">1.1 Listing files and directories</a></li>
-                                <li><a href="#section-2">1.2 Making Directories</a></li>
-                                <li><a href="#section-3">1.3 Changing to a different directory</a></li>
-                                <li><a href="#section-4">1.4 The directories . and ..</a></li>
-                                <li><a href="#section-5">1.5 Pathnames</a></li>
-                                <li><a href="#section-6">1.6 More about home directories and pathnames</a></li>
-                                <li><a href="#section-7">Summary</a></li>
+                            <ul class="nav nav-tabs nav-stacked affix visible-lg-block visible-md-block" data-spy="affix" data-offset-top="134">
+                                <?php if( dynamic_sidebar( 'toc_widget' ) ) : else : endif; ?>
+
                             </ul>
                         </div>
                     </div>

@@ -29,9 +29,9 @@ get_header(); ?>
                         query_posts ('posts_per_page=12');
                         if (have_posts()) : while (have_posts()) : the_post();
                     ?>
-                  <div class="main-table-items col-sm-6 col-md-4">
+                  <div class="main-table-items col-sm-6 col-md-4" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
                       <div class="main-table-item-box">
-                          <h3 class="main-table-item-h3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                          <h3 class="main-table-item-h3"><?php the_title(); ?></h3>
                           <p><?php the_excerpt();?></p>
                       </div>
                   </div>

@@ -17,12 +17,12 @@ get_header(); ?>
         <div class="row">
            <?php 
                         global $query_string;
-                        query_posts ('posts_per_page=12');
+                        query_posts ();
                         if (have_posts()) : while (have_posts()) : the_post();
                     ?>
             <div class="col-md-12 tutorial-item-row" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
                 <div class="col-md-4 tutorial-item-img">
-                    <a href="tutorial.html" class="tutorial-link hidden-sm hidden-xs"><img src="http://www.pictures4cool.com/media/images/e4454c8df9.png" alt="" class="tutorial-img img-responsive"></a>
+                    <img src="http://www.pictures4cool.com/media/images/e4454c8df9.png" alt="" class="tutorial-img img-responsive">
                 </div>
                 <div class="col-md-8 tutorial-item-description">
                     <h2 class="tutorial-item-h2"><?php the_title(); ?></h2>

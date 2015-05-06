@@ -102,8 +102,24 @@ function underscores_theme_widgets_init() {
         'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
     ) );
+    register_sidebar( array(
+        'name'          => 'RSS Widget',
+        'id'            => 'rss_widget',
+        'before_widget' => '<aside>',
+		'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+    ) );
+    register_sidebar( array(
+        'name'          => 'Table of Contents Widget',
+        'id'            => 'toc_widget',
+        'before_widget' => '<aside>',
+		'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+    ) );
 }
-add_action( 'widgets_init', 'underscores_theme_widgets_init', 'header_widget' );
+add_action( 'widgets_init', 'underscores_theme_widgets_init', 'header_widget', 'rss_widget', 'toc_title' );
 /**
  * Enqueue scripts and styles.
  */
@@ -156,5 +172,10 @@ function wpbootstrap_scripts_with_jquery()
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
+// Increase excerpt length
+function my_excerpt_length($length) {
+	return 40; // Or whatever you want the length to be.
+}
+add_filter('excerpt_length', 'my_excerpt_length');
 
 ?>
