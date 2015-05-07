@@ -15,10 +15,10 @@ get_header(); ?>
     
 
         <div class="jumbotron">
-                <div class="sisu col-sm-7"> 
+                <div class="sisu col-md-7"> 
                     <h2 class="hidden-sm hidden-xs">Check out these popular tutorials</h2>
                 </div>
-                <div class="eelvaade col-sm-5 visible-lg-block visible-md-block">
+                <div class="eelvaade col-md-5">
                     <span><a class="btn btn-primary btn-lg learn-now" href="index.html" role="button">Browse All</a></span>
             </div>
         </div>
@@ -31,6 +31,7 @@ get_header(); ?>
                     ?>
                   <div class="main-table-items col-sm-6 col-md-4" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
                       <div class="main-table-item-box">
+                          <img src="https://d1cg27r99kkbpq.cloudfront.net/static/icon/43-19-minutes-with-ansible-part-1-4-icon.png" alt="" style="height:150px; width:200px margin:0 auto;" class="tutorial-img img-responsive hidden-xs">
                           <h3 class="main-table-item-h3"><?php the_title(); ?></h3>
                           <p><?php the_excerpt();?></p>
                       </div>

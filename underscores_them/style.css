@@ -1050,7 +1050,7 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     padding: 15px 15px;
     margin-top: 5px;
     border-top: 5px solid orange;
-    height: 250px;
+    height: 400px;
 }
 .main-table-item-box:hover {
     border-top: 5px solid red;
@@ -1123,7 +1123,6 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
 .tutorial-item-row {
     border-bottom: 1px solid lightgray;
     border-right: 5px solid white;
-    max-height: 140px;
 }
 .tutorial-item-description h2 {
     font-family: 'Questrial', sans-serif;
