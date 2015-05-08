@@ -1049,12 +1049,10 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     background: white;
     padding: 15px 15px;
     margin-top: 5px;
-    border-top: 5px solid orange;
     height: 400px;
 }
 .main-table-item-box:hover {
-    border-top: 5px solid red;
-    background: #F8F8F8;
+     background: #F8F8F8;
 }
 .main-table-item-box:hover p {
     color: black;
