@@ -968,7 +968,7 @@ header {
     
 }
 /* Search */
-.search {
+.search-bar {
     width: 195px;
     margin-top: 18px;
     margin-left: 20px;
@@ -1183,4 +1183,11 @@ ul.nav-tabs li a:hover{
     margin-left: 0;
     font-size: 1.5em;
 }
+
+
+
+
+
+
+
 

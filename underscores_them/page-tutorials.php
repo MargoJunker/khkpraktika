@@ -22,7 +22,9 @@ get_header(); ?>
                     ?>
             <div class="col-sm-12 tutorial-item-row" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
                 <div class="col-sm-4 tutorial-item-img">
-                    <img src="http://www.pictures4cool.com/media/images/e4454c8df9.png" alt="" class="tutorial-img img-responsive hidden-xs">
+                    <div class="tutorial-img img-responsive hidden-xs"><?php if ( has_post_thumbnail() ) {
+	the_post_thumbnail();
+                    } ?></div>
                 </div>
                 <div class="col-sm-8 tutorial-item-description">
                     <h2 class="tutorial-item-h2"><?php the_title(); ?></h2>

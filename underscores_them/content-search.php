@@ -9,22 +9,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php underscores_theme_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-	    <h1>HAAA</h1>
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php underscores_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+    <div class="col-sm-12 tutorial-item-row" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
+                <div class="col-sm-4 tutorial-item-img">
+                    <div class="tutorial-img img-responsive hidden-xs"><?php if ( has_post_thumbnail() ) {
+	the_post_thumbnail();
+ } ?></div>
+                </div>
+                <div class="col-sm-8 tutorial-item-description">
+                    <h2 class="tutorial-item-h2"><?php the_title(); ?></h2>
+                    <p class="tutorial-item-p"><?php the_excerpt();?></p>
+                </div>
+            </div>
 </article><!-- #post-## -->
