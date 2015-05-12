@@ -23,7 +23,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="main-content">      
-            <div class="row">
+            <div class="row main-row">
                   <?php 
                         global $query_string;
                         query_posts ('posts_per_page=12');
@@ -31,8 +31,8 @@ get_header(); ?>
                     ?>
                     
 	
-                  <div class="main-table-items col-sm-6 col-md-4" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
-                      <div class="main-table-item-box">
+                  <div class="main-table-items col-sm-6 col-md-4">
+                      <div class="main-table-item-box" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
                           <div class="tutorial-img img-responsive hidden-xs"><?php if ( has_post_thumbnail() ) {
 	the_post_thumbnail();
                     } ?></div>

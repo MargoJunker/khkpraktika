@@ -922,6 +922,13 @@ body {
 .row {
     max-width: 940px;
     margin: 0 auto;
+    border: 1px solid lightgray;
+}
+.main-row {
+    border: none;
+}
+.toc {
+    border: none;
 }
 /*--------------------------------------------------------------
 ## Header
@@ -1044,12 +1051,13 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
 }
 .main-table-items {
     margin: 0 auto;
+    padding: 10px 10px;
 }
 .main-table-item-box {
     background: white;
     padding: 15px 15px;
     margin-top: 5px;
-    height: 400px;
+    height: 410px;
 }
 .main-table-item-box:hover {
      background: #F8F8F8;
@@ -1086,6 +1094,7 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
 }
 .tutorial-content {
     padding: 44px 15px;
+    border-left: 1px solid lightgray;
 }
 .tutorial-header {
     font-size: 4em;
@@ -1121,6 +1130,7 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
 .tutorial-item-row {
     border-bottom: 1px solid lightgray;
     border-right: 5px solid white;
+    height: 140px;
 }
 .tutorial-item-description h2 {
     font-family: 'Questrial', sans-serif;
@@ -1183,9 +1193,6 @@ ul.nav-tabs li a:hover{
     margin-left: 0;
     font-size: 1.5em;
 }
-
-
-
 
 
 

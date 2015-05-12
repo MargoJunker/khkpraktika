@@ -10,9 +10,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">-->  
             <div class="row">
                 <div class="col-md-4">
-                    <div class="row">
-                        <div class="inb" id="myScrollspy">
-                            <ul class="nav nav-tabs nav-stacked affix visible-lg-block visible-md-block" data-spy="affix" data-offset-top="134">
+                    <div class="row toc">
+                        <div class="scrollspy" id="myScrollspy">
+                            <ul class="nav nav-tabs nav-stacked affix visible-lg-block visible-md-block" data-spy="affix" id="nav" data-offset-top="134">
                                 <?php if( dynamic_sidebar( 'toc_widget' ) ) : else : endif; ?>
 
                             </ul>

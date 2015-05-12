@@ -28,11 +28,21 @@
   ga('send', 'pageview');
 
 </script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    setTimeout(updateScrollSpy, 1000);
+});
+function updateScrollSpy() {
+    jQuery('[data-spy="scroll"]').each(function () {
+      var $spy = jQuery(this).scrollspy('refresh')
+    });
+}
+</script>
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
 </head>
 
-<body data-spy="scroll" <?php body_class(); ?>>
+<body data-spy="scroll" data-target=".scrollspy" <?php body_class(); ?>>
 <!--<div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'underscores_theme' ); ?></a>
 
