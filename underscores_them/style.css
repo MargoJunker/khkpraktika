@@ -21,6 +21,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import url('css/bootstrap.min.css');
 @import url('css/bootstrap-responsive.css');
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -50,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -894,8 +895,6 @@ object {
 /*--------------------------------------------------------------
 ## Own CSS
 --------------------------------------------------------------*/
-@import url('bootstrap.css'); 
-@import url('bootstrap-responsive.css'); 
 * {
     padding: 0;
     margin: 0;
@@ -906,7 +905,7 @@ object {
 body {
     color: #000;
     text-align: center;
-    font-family: 'Conten', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .wrapper {
     max-width: 940px;
@@ -930,6 +929,16 @@ body {
 .toc {
     border: none;
 }
+ul.nav-tabs.affix {
+    width: 20%;
+    top: 10px;
+}
+ul.nav-tabs {
+    border-bottom: none;
+    margin-top: 0px;
+    margin-left: 0;
+}
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
@@ -956,7 +965,7 @@ header {
 }
 .site-header a {
     color: black;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.5em;
     margin-top: 15px;
     font-weight: 500;
@@ -971,14 +980,14 @@ header {
     text-decoration: none;
 }
 .site-header nav ul li a:hover {
-    color: #989898;
+    text-shadow: -1px 2px 4px rgba(150, 150, 150, 1);
     
 }
 /* Search */
 .search-bar {
-    width: 195px;
+    width: 250px;
     margin-top: 18px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .search-button {
     height: 30px;
@@ -1029,12 +1038,12 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     text-align: center;
     font-size: 3.5em;
     margin-top: 15px;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 /* Button */
 .jumbotron span a{
     margin: 12px 0;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .jumbotron span a:visited {
     color: white;
@@ -1074,7 +1083,7 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
 
 .main-table-item-h3 a{
     color: black;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.2em;
 }
 .main-table-item-box>p {
@@ -1133,48 +1142,16 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     height: 140px;
 }
 .tutorial-item-description h2 {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .tutorial-item-row:hover {
     border-right: 5px solid orange;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  color: darkred;
-  cursor: default;
-  background: none;
-  border: none;
-  border-bottom-color: transparent;
-}
-div.inb ul.nav>li>a {
-    padding: 5px 0px;
-}
-div.inb ul.nav>li {
-    text-align: left;
-    font-size: 1.5em;
-}
-ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+ul.nav-tabs li .active a,ul.nav-tabs li.active>a {
     color: red;
     font-weight: 700;
     background: none;
-}
-ul.nav-tabs.affix {
-    top: 10px;
-    width: 273px;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  color: darkred;
-  cursor: default;
-  background: none;
-  border: none;
-  border-bottom-color: transparent;
-}
-.nav-tabs>li>a:visited {
-    color: gray;
-}
-ul.nav-tabs {
-    border-bottom: none;
-    margin-top: 0px;
 }
 ul.nav-tabs li a {
     color: gray;

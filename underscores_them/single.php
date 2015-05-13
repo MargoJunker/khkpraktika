@@ -9,7 +9,7 @@ get_header(); ?>
 	<!--<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">-->  
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="row toc">
                         <div class="scrollspy" id="myScrollspy">
                             <ul class="nav nav-tabs nav-stacked affix visible-lg-block visible-md-block" data-spy="affix" id="nav" data-offset-top="134">
@@ -20,7 +20,7 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="col-md-8 tutorial-content">
+                <div class="col-md-9 tutorial-content">
                     <div class="tutorial-ad-box hidden-xs">
                         <p>Advertisement 468x60</p>
                     </div>     

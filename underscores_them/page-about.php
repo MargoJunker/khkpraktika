@@ -15,7 +15,9 @@ get_header(); ?>
     
 
         <div class="row">
-            <br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br>
+            <h1>I make mistakes quite often, so feel free to point out and comment!</h1>
+            <br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br>
