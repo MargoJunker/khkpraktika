@@ -7,10 +7,10 @@
  * @package Underscores_theme
  */
 ?>
-
+</div>
 	</div><!-- #content -->
     <!-- added class wrapper to footer -->
-	<footer id="colophon" class="site-footer wrapper" role="contentinfo">
+	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<!--<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'underscores_theme' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'underscores_theme' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
@@ -18,7 +18,7 @@
 			<p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y');?></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+<!-- #page -->
 
 <?php wp_footer(); ?>
 

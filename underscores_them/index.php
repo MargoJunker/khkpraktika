@@ -13,7 +13,7 @@
 
 get_header(); ?>
     
-
+    <div class="wrapper">
         <div class="jumbotron">
                 <div class="sisu col-md-7"> 
                     <h2 class="hidden-sm hidden-xs">This is a TEST Website</h2>
@@ -44,6 +44,7 @@ get_header(); ?>
                         else :
                             echo '<p>No content found</p>';
                         endif; ?>
+                  <span><a class="btn btn-primary btn-lg more navbar-right" href="http://178.62.65.175/tutorials/" role="button">More</a></span>
             </div>
 	    <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
