@@ -916,6 +916,7 @@ body {
 ## Content
 --------------------------------------------------------------*/
 .site-content {
+    margin-top: 30px;
 
 }
 .row {
@@ -943,7 +944,6 @@ ul.nav-tabs {
 ## Header
 --------------------------------------------------------------*/
 header {
-    margin-bottom: 30px;
     margin: 0 auto;
 }
 .header-width {
@@ -987,7 +987,7 @@ header {
 .site-header nav ul li a:hover {
     font-weight: 700;
     padding-right: 8px;
-    padding-left: 8.2px;
+    padding-left: 8.4px;
 }
 .menu-item-20 a:hover {
     font-weight: 700;
@@ -996,9 +996,8 @@ header {
 }
 /* Search */
 .search-bar {
-    width: 214px;
+    width: 213px;
     margin-top: 18px;
-    margin-left: 40px;
 }
 .search-button {
     height: 30px;
@@ -1009,9 +1008,6 @@ header {
 .form-control {
     padding: 0 !important;
     padding-left: 5px !important;
-}
-input[type="search"] {
-    color: #E6E6E6 !important;
 }
 .input-group-addon {
     padding: 0;
@@ -1026,8 +1022,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 /* Rss widget */
 .rss-widget {
-    margin-top: 7px;
+    margin-top: 1px;
     margin-left: 20px;
+    margin-right: 0;
+}
+.cnss-social-icon>li:hover {
+    padding-left: 1.8px;
+    padding-right: 2.5px;
 }
 .cnss-social-icon>li>a {
     margin: 0;
@@ -1043,6 +1044,7 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 1px solid lightgray;
 }
 .learn-now {
     margin-top: 12px;
@@ -1091,10 +1093,10 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     font-weight: 400;
 }
 .main-table-item-box h3 {
-    color: #3333FF;
+    color: #337ab7;
 }
 .main-table-item-box:hover h3 {
-    color: #2929CC;
+    color: #23527c;
     text-decoration: none;
 }
 
@@ -1107,11 +1109,15 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     font-size: 1.3em;
 }
 .more {
-    margin-right: 20px;
+    margin-right: 0px;
     color: white;
 }
 .more:visited {
     color: white !important;
+}
+.more-h1 {
+    font-size: 3em;
+    font-weight: 700;
 }
 /*--------------------------------------------------------------
 ## Single
@@ -1167,6 +1173,7 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
 }
 .tutorial-item-description h2 {
     font-family: 'Ubuntu', sans-serif;
+    color: #337ab7;
 }
 .tutorial-item-description p {
     font-family: 'Ubuntu', sans-serif;
@@ -1175,7 +1182,9 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
 .tutorial-item-row:hover {
     border-right: 5px solid orange;
 }
-
+.tutorial-item-row:hover h2 {
+    color: #23527c;
+}
 ul.nav-tabs li .active a,ul.nav-tabs li.active>a {
     color: red;
     font-weight: 700;
@@ -1198,8 +1207,3 @@ ul.nav-tabs li a:hover{
     margin-left: 0;
     font-size: 1.5em;
 }
-
-
-
-
-

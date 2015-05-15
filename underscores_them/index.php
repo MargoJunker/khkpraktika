@@ -44,7 +44,8 @@ get_header(); ?>
                         else :
                             echo '<p>No content found</p>';
                         endif; ?>
-                  <span><a class="btn btn-primary btn-lg more navbar-right" href="http://178.62.65.175/tutorials/" role="button">More</a></span>
+                  <h1 class="more-h1">That's not all!</h1>
+                  <span><a class="btn btn-primary btn-lg more navbar-center" href="http://178.62.65.175/tutorials/" role="button">Browse More Tutorials</a></span>
             </div>
 	    <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

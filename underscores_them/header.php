@@ -65,14 +65,14 @@ function updateScrollSpy() {
               <div class="wrapper">
                 <a class="navbar-brand" href="http://178.62.65.175"><img class="navbar-brand" alt="Logo" src="http://www.upload.ee/image/4691422/01.png"></a>
                 <div class="navbar-left"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?></div>
-                <div class="navbar-left header-widget hidden-xs">
-                    <?php if( dynamic_sidebar( 'header_widget' ) ) : else : endif; ?>
-                </div>
-                <div class="navbar-left rss-widget hidden-xs hidden-sm">
+                <div class="navbar-right rss-widget hidden-xs hidden-sm">
                     <?php if( dynamic_sidebar( 'rss_widget' ) ) : else : endif; ?>
+                </div>
+                <div class="navbar-right header-widget hidden-xs">
+                    <?php if( dynamic_sidebar( 'header_widget' ) ) : else : endif; ?>
                 </div>
             </div>
 		</nav><!-- #site-navigation -->
         </header>
-        
+        <div class="site-content">
 <!-- /header -->
