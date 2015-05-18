@@ -174,7 +174,7 @@ add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
 // Increase excerpt length
 function my_excerpt_length($length) {
-	return 40; // Or whatever you want the length to be.
+	return 20; // Or whatever you want the length to be.
 }
 add_filter('excerpt_length', 'my_excerpt_length');
 add_theme_support( 'post-thumbnails' ); 

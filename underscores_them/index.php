@@ -44,6 +44,19 @@ get_header(); ?>
                         else :
                             echo '<p>No content found</p>';
                         endif; ?>
+                        <?php if(function_exists('stats_get_csv')){
+                        $popular = stats_get_csv( 'postviews', array( 'days' => 14, 'limit' => 12 ) );
+                        echo '<ol>';
+                        foreach ( $popular as $p ) {
+                                printf('<div class="main-table-items col-sm-6 col-md-4">
+                                        <div class="main-table-item-box" onclick="location.href="%s"" style="cursor: pointer;"><div class="tutorial-img img-responsive hidden-xs">%a</div>
+                                        <h3 class="main-table-item-h3">%s</h3>
+                          <p>%s</p>
+                      </div>
+                  </div>', $p['post_permalink'], $p['post_thumbnail'], $p['post_title'], $p['the_excerpt'] );
+                        }
+                        echo '</ol>';
+                        } ?>
                   <h1 class="more-h1">That's not all!</h1>
                   <span><a class="btn btn-primary btn-lg more navbar-center" href="http://178.62.65.175/tutorials/" role="button">Browse More Tutorials</a></span>
             </div>

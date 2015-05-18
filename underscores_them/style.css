@@ -1129,11 +1129,15 @@ background:url(http://wallpaperswa.com/thumbnails/detail/20131112/abstract%20min
     width: 468px;
     height: 60px;
     border: 1px solid black;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
 }
 .tutorial-content {
     padding: 44px 15px;
     border-left: 1px solid lightgray;
+    text-align: left;
+}
+.tutorial-content h1 {
+    text-align: center;
 }
 .tutorial-header {
     font-size: 4em;
@@ -1207,3 +1211,4 @@ ul.nav-tabs li a:hover{
     margin-left: 0;
     font-size: 1.5em;
 }
+
