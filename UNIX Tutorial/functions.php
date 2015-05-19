@@ -1,15 +1,10 @@
 <?php
-/**
- * Underscores_theme functions and definitions
- *
- * @package Underscores_theme
- */
 
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 940; /* pixels */
 }
 
 if ( ! function_exists( 'underscores_theme_setup' ) ) :
@@ -177,5 +172,42 @@ function my_excerpt_length($length) {
 	return 20; // Or whatever you want the length to be.
 }
 add_filter('excerpt_length', 'my_excerpt_length');
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
+
+// Post view counter
+function wpb_set_post_views($postID) {
+    $count_key = 'wpb_post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+//To keep the count accurate, lets get rid of prefetching
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+function wpb_track_post_views ($post_id) {
+    if ( !is_single() ) return;
+    if ( empty ( $post_id) ) {
+        global $post;
+        $post_id = $post->ID;    
+    }
+    wpb_set_post_views($post_id);
+}
+add_action( 'wp_head', 'wpb_track_post_views');
+
+function wpb_get_post_views($postID){
+    $count_key = 'wpb_post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 View";
+    }
+    return $count.' Views';
+}
 ?>

@@ -1,12 +1,4 @@
-<?php
-/**
- * The template part for displaying results in search pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package Underscores_theme
- */
-?>
+<?php?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="col-sm-12 tutorial-item-row" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">

@@ -1,8 +1,4 @@
-<?php
-/**
- * @package Underscores_theme
- */
-?>
+<?php?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">

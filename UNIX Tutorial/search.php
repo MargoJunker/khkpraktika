@@ -1,9 +1,5 @@
 <?php
-/**
- * The template for displaying search results pages.
- *
- * @package Underscores_theme
- */
+
 get_header(); ?>
     
 

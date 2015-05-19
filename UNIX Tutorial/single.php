@@ -1,14 +1,7 @@
-<?php
-/**
- * The template for displaying all single posts.
- *
- * @package Underscores_theme
- */
-
-get_header(); ?>
-	<!--<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">-->  
+<?php get_header(); ?>
+           
             <div class="row">
+                <!-- Table of Contents -->
                 <div class="col-md-3">
                     <div class="row toc">
                         <div class="scrollspy" id="myScrollspy">
@@ -19,28 +12,25 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-
+                <!-- /Table of Contents -->
+                
+                <!-- Content -->
                 <div class="col-md-9 tutorial-content">
+                    <!-- Advertisement -->
                     <div class="tutorial-ad-box hidden-xs">
                         <p>Advertisement 468x60</p>
                     </div>     
-                <?php while ( have_posts() ) : the_post(); ?>
-                    <?php get_template_part( 'content', 'single' ); ?>
+                    <?php while ( have_posts() ) : the_post();
+                    wpb_set_post_views(get_the_ID());
 
-                 <?php the_post_navigation(); ?>
+                    get_template_part( 'content', 'single' );
 
-			<?/*php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?*/>
+                    the_post_navigation(); ?>
 
-		<?php endwhile; // end of the loop. ?>
+                    <?php endwhile; // end of the loop. ?>
+                </div>
+                <!-- /Content -->
             </div>
-        </div>
-		<!--</main><!-- #main -->
-	<!--</div><!-- #primary -->
-
+            
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
