@@ -3,13 +3,7 @@
             <div class="wrapper">
                 <!-- Jumbotron -->
                 <div class="jumbotron">
-                    <div class="sisu col-md-7"> 
-                        <h2 class="hidden-sm hidden-xs">This is a TEST Website</h2>
-                    </div>
-                    <!-- Jumbo-Button -->
-                    <div class="eelvaade col-md-5">
-                        <span><a class="btn btn-primary btn-lg learn-now" href="http://178.62.65.175/tutorials/" role="button">Browse All</a></span>
-                    </div>
+                    <p class="visible-lg-block">Sometimes referred to as a "large leaderboard." This ad format expands to 970x415 while politely "pushing" all page elements downwards. This size is ideal to showcase High-Definition content such as videos, photos, animations, and applications. </p>
                 </div>
                 <!-- Main-content -->
                 <div class="main-content">      
