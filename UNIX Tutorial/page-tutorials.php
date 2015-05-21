@@ -19,9 +19,11 @@
                         <h2 class="tutorial-item-h2">
                             <?php the_title(); ?>
                         </h2>
-                        <p class="tutorial-item-p">
-                            <?php the_excerpt();?>
-                        </p>
+                        <div class="hidden-xs hidden-sm">    
+                            <p class="tutorial-item-p">
+                                <?php the_excerpt();?>
+                            </p>
+                        </div>
                     </div>
                 </div>
                     <?php endwhile;

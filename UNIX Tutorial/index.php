@@ -14,7 +14,7 @@
                         <div class="main-table-items col-sm-6 col-md-4">
                             <div class="main-table-item-box" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
                                 <!-- Thumbnail -->
-                                <div class="tutorial-img img-responsive hidden-xs">
+                                <div class="tutorial-img img-responsive">
                                     <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
                                 </div>
                                 <!-- Title & Excerpt -->

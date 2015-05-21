@@ -1065,7 +1065,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 .main-table-item-box:hover h3 {
     color: #23527c;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .main-table-item-h3 a{
@@ -1142,7 +1142,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 }
 .tutorial-item-row {
     border-bottom: 1px solid lightgray;
-    border-right: 5px solid white;
     height: 150px;
 }
 .tutorial-item-description h2 {
@@ -1154,10 +1153,11 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     font-size: 1.3em;
 }
 .tutorial-item-row:hover {
-    border-right: 5px solid orange;
+     background: #F8F8F8;    
 }
 .tutorial-item-row:hover h2 {
     color: #23527c;
+    text-decoration: underline;
 }
 /*--------------------------------------------------------------
 ## TOC
