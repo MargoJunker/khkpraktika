@@ -2,11 +2,11 @@
     
             <div class="wrapper">
                 <!-- Jumbotron -->
-                <div class="jumbotron">
-                    <p class="visible-lg-block">Sometimes referred to as a "large leaderboard." This ad format expands to 970x415 while politely "pushing" all page elements downwards. This size is ideal to showcase High-Definition content such as videos, photos, animations, and applications. </p>
+                <div class="jumbotron hidden-xs">
+                    <img class="" src="http://promotions.newegg.com/tablet/13-3226/970x90.jpg">
                 </div>
                 <!-- Main-content -->
-                <div class="main-content">      
+                <div class="main-content" style="border-top: 1px solid lightgray;">      
                     <div class="row main-row">
                         <!-- Main-post-grid -->
                         <?php $popularpost = new WP_Query( array( 'posts_per_page' => 12, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );

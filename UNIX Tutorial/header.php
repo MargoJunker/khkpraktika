@@ -41,7 +41,7 @@
             <nav id="site-navigation" class="main-navigation navbar-center" role="navigation">
                 <div class="wrapper">
                     <!-- Logo -->
-                    <a class="navbar-brand" href="http://178.62.65.175"><img class="navbar-brand" alt="Logo" src="http://www.upload.ee/image/4691422/01.png"></a>
+                    <a class="navbar-brand" href="http://178.62.65.175"><img class="navbar-brand" alt="Logo" src="http://www.upload.ee/image/4736899/logo.png"></a>
                     <!-- Menu -->
                     <div class="navbar-left">
                         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

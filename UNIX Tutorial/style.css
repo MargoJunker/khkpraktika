@@ -12,6 +12,7 @@ Tags: Tutorial, Learning, Help, Student, UNIX
 @import url('css/bootstrap.min.css');
 @import url('css/bootstrap-responsive.css');
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Montserra:700,400);
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -961,10 +962,10 @@ header {
 }
 .site-header a {
     color: black;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserra', sans-serif;
     font-size: 1.5em;
     margin-top: 15px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .site-header nav ul li a:link,
 .site-header nav ul li a:link,
@@ -976,14 +977,7 @@ header {
     text-decoration: none;
 }
 .site-header nav ul li a:hover {
-    font-weight: 700;
-    padding-right: 8px;
-    padding-left: 8.4px;
-}
-.menu-item-20 a:hover {
-    font-weight: 700;
-    padding-right: 8.5px !important;
-    padding-left: 10px !important;
+    text-shadow: 0 0 0.01px black, 0 0 0.01px black, 0 0 0.01px black;
 }
 /* Search */
 .search-bar {
@@ -1031,6 +1025,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     margin: 0 auto;
     padding: 0;
     height: 90px;
+    background: none;
 }
 /*--------------------------------------------------------------
 ## Main
@@ -1137,8 +1132,9 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 ## Tutorial
 --------------------------------------------------------------*/
 .tutorial-item-img img{
-    margin: 10px auto;
-    max-height: 120px;
+    margin: 0 auto;
+    max-height: 150px;
+    padding: 5px;
 }
 .tutorial-item-row {
     border-bottom: 1px solid lightgray;

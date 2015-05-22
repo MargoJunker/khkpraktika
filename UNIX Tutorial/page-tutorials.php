@@ -10,7 +10,7 @@
                 <!-- Thumbnail -->
                 <div class="col-sm-12 tutorial-item-row" onclick="location.href='<?php the_permalink(); ?>';" style="cursor: pointer;">
                     <div class="col-sm-4 tutorial-item-img">
-                        <div class="tutorial-img img-responsive hidden-xs">
+                        <div class="tutorial-img hidden-xs">
                             <?php if ( has_post_thumbnail() ) {	the_post_thumbnail(); } ?>
                         </div>
                     </div>

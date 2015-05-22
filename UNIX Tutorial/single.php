@@ -1,8 +1,8 @@
 <?php get_header(); ?>
            
             <div class="row">
-                <div class="jumbotron">
-                    <p class="visible-lg-block">Sometimes referred to as a "large leaderboard." This ad format expands to 970x415 while politely "pushing" all page elements downwards. This size is ideal to showcase High-Definition content such as videos, photos, animations, and applications. </p>
+                <div class="jumbotron hidden-xs">
+                    <img class="" src="http://promotions.newegg.com/tablet/13-3226/970x90.jpg">
                 </div>
                 <div class="col-md-3">
                     <div class="row toc">
